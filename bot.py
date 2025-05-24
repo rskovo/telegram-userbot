@@ -70,7 +70,7 @@ async def monitor_status():
             last_status = current
             last_change_time = now
 
-        await asyncio.sleep(30)  # Проверяем каждые 30 секунд
+        await asyncio.sleep(60)  # Проверяем каждые 30 секунд
 
 async def main():
     await client.start()
